@@ -1,0 +1,164 @@
+/*----------------INFO-----------------
+  lang:css
+  typ:css library
+  use:small lightweight starter lib
+  specs:grids,btns,forms, gradients etc;
+  build:by atoms19 15/12/2020(8:06pm)
+  state:public(via apche 2.0)  
+--------------------------------------*/
+
+:root{
+  --primary:#6228f7;
+  --primary-dark:#28008c;
+}
+
+body{
+  font-family:verdana,sans-serif;
+}
+
+
+
+
+
+/*COMPONENTS-----------------------------*/  
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"]{
+  border:2px solid #4f4f4f;
+  outline:none;
+  color:#4f4f4f;
+  cursor:pointer;
+  margin-bottom:1rem;
+  margin:2px 3px 5px 10px;
+  background-color:white;
+  padding:0.45rem 1rem;
+  border-radius:.4rem;
+  font-size:15px;
+  transition:0.23s;
+ -webkit-tap-highlight-color: transparent;
+}
+  
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover{
+  border:2px solid #5534eb;
+  box-shadow:0px 0px 5px #6f52f2;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover
+.-primary:hover{
+   border:2px solid var(--primary-dark);
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:hover,
+input[type="reset"]:active{
+  opacity:0.92;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active
+.-disabled:active{
+  opacity:0.57;
+  }
+  
+  button[disabled],
+  input[disabled]
+  a[disabled]{
+    opacity:0.57;  
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*UTILITIES---------------------------*/
+.-primary{
+  background-color:var(--primary);
+  color:white;
+  border:2px solid var(--primary);
+}
+
+.-wide-max{
+  width:100%;
+  box-sizing:border-box;
+  margin-left:0;
+}
+.-wide-mid{
+  width:50%;
+  box-sizing:border-box;
+}
+
+.-push-right{
+  float:right;
+}
+.-push-left{
+  float:left;
+}
+/*TYPOGRAPHY--------------------------*/
+  h1,h2,h3,h4,h5,h6{
+  color:black;
+  font-weight:500;margin-top:0;margin-bottom:0.5rem;
+}
+
+h1{font-size:3.6rem;}
+h2{font-size:3rem;}
+h3{font-size:2.7rem;}
+h4{font-size:2.2rem;}
+h5{font-size:1.8rem;}
+h6{font-size:1.4rem;}
+
+
+p{margin-top:0px;line-height:1.5rem;}
+
+a{
+  color:#2946c4;
+  cursor:pointer;
+   -webkit-tap-highlight-color: transparent;}
+
+a:active{color:red;}
+
+a:visited{color:#9234eb;}
+
+
+hr{
+  border:none;
+  background-color:#cccccc;
+  height:0.2rem;
+  border-radius:5px;
+  margin-top:2rem;
+  margin-bottom:2.5rem;
+  width:100%;
+}
+
+p.p::first-letter{
+  font-size:1.7rem;
+  text-transform: uppercase;
+}
+
+code{
+  display:block;
+  background-color:#e6e6e6;
+  font-size:90%;
+  white-space:no-wrap;
+  padding:2rem;
+  margin:0.5rem;
+ border-radius:5px;
+}
+
+/*FLEXBOX GRID-----------------------*/
+
+/*require -<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >*/
